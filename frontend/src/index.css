@@ -1,0 +1,330 @@
+/* ==========================================================================
+   AirPulse — Editorial Scientific Design System (Shades of Blue & Claude-like)
+   ========================================================================== */
+
+:root {
+  --font-serif: 'Newsreader', Georgia, Cambria, 'Times New Roman', serif;
+  --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+
+  /* Curated Shades of Blue */
+  --bg-deep: #060a12;
+  --bg-midnight: #0b1120;
+  --bg-navy: #0f172a;
+  --bg-surface: rgba(15, 23, 42, 0.72);
+  --bg-surface-hover: rgba(23, 37, 68, 0.85);
+  --bg-surface-elevated: rgba(19, 31, 58, 0.85);
+
+  --border-subtle: rgba(71, 98, 143, 0.22);
+  --border-medium: rgba(96, 165, 250, 0.3);
+  --border-active: rgba(96, 165, 250, 0.65);
+
+  /* Blue Color Hierarchy */
+  --blue-ice: #e0f2fe;
+  --blue-sky: #38bdf8;
+  --blue-accent: #60a5fa;
+  --blue-primary: #3b82f6;
+  --blue-deep: #1d4ed8;
+  --blue-navy: #1e3a8a;
+  --blue-glow: rgba(56, 189, 248, 0.15);
+
+  /* Restrained Scientific Severity Signals */
+  --critical-text: #f87171;
+  --critical-bg: rgba(239, 68, 68, 0.1);
+  --critical-border: rgba(239, 68, 68, 0.3);
+
+  --elevated-text: #fbbf24;
+  --elevated-bg: rgba(245, 158, 11, 0.1);
+  --elevated-border: rgba(245, 158, 11, 0.3);
+
+  --normal-text: #38bdf8;
+  --normal-bg: rgba(56, 189, 248, 0.1);
+  --normal-border: rgba(56, 189, 248, 0.3);
+
+  /* Typography Colors */
+  --text-primary: #f8fafc;
+  --text-secondary: #94a3b8;
+  --text-muted: #64748b;
+  --text-dim: #475569;
+
+  /* Radii & Shadows */
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 14px;
+  --radius-full: 9999px;
+
+  --shadow-subtle: 0 4px 20px -2px rgba(3, 7, 18, 0.5);
+  --shadow-elevated: 0 12px 36px -4px rgba(3, 7, 18, 0.7);
+  --shadow-blue-glow: 0 0 24px -4px rgba(56, 189, 248, 0.18);
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-sans);
+  font-size: 16px;
+  line-height: 1.6;
+  background-color: var(--bg-deep);
+  color: var(--text-primary);
+  min-height: 100vh;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Custom Refined Scrollbar */
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg-deep);
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(71, 98, 143, 0.45);
+  border-radius: var(--radius-full);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--blue-accent);
+}
+
+/* Claude-like Editorial Typography - Bolder & More Authoritative */
+h1, h2, h3, h4, .font-serif {
+  font-family: var(--font-serif);
+  font-feature-settings: 'cv02', 'cv03', 'cv04', 'cv11';
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.font-sans {
+  font-family: var(--font-sans);
+  font-weight: 550;
+}
+
+.font-mono {
+  font-family: var(--font-mono);
+  font-weight: 600;
+}
+
+/* Glass & Card Surfaces */
+.glass-panel {
+  background: var(--bg-surface);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-subtle);
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.glass-panel:hover {
+  border-color: var(--border-medium);
+}
+
+.glass-card {
+  background: var(--bg-surface-elevated);
+  backdrop-filter: blur(12px);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  padding: 1.25rem;
+  transition: border-color 0.2s ease, background 0.2s ease;
+}
+
+.glass-card:hover {
+  background: var(--bg-surface-hover);
+  border-color: var(--border-medium);
+}
+
+/* Form Controls - Bolder & Larger for High Readability */
+input, select, textarea {
+  font-family: var(--font-sans);
+  font-size: 0.9rem;
+  font-weight: 550;
+  color: var(--text-primary);
+  border-radius: var(--radius-sm);
+  outline: none;
+}
+
+input::placeholder, textarea::placeholder {
+  color: #64748b;
+  font-weight: 500;
+}
+
+/* Buttons - Dignified & Authoritative */
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+  color: #ffffff;
+  font-family: var(--font-sans);
+  font-weight: 700;
+  font-size: 0.95rem;
+  padding: 0.75rem 1.45rem;
+  border-radius: var(--radius-md);
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 4px 14px rgba(37, 99, 235, 0.32);
+}
+
+.btn-primary:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 20px rgba(37, 99, 235, 0.45);
+  filter: brightness(1.08);
+}
+
+.btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  background: rgba(23, 37, 68, 0.6);
+  color: var(--text-primary);
+  font-family: var(--font-sans);
+  font-weight: 650;
+  font-size: 0.95rem;
+  padding: 0.75rem 1.35rem;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-subtle);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btn-secondary:hover {
+  background: rgba(30, 48, 88, 0.85);
+  border-color: var(--blue-accent);
+  color: #ffffff;
+}
+
+/* Badges & Chips */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.32rem 0.85rem;
+  border-radius: var(--radius-full);
+  font-size: 0.82rem;
+  font-weight: 750;
+  letter-spacing: 0.025em;
+}
+
+.badge-critical {
+  background: var(--critical-bg);
+  color: var(--critical-text);
+  border: 1px solid var(--critical-border);
+}
+
+.badge-elevated {
+  background: var(--elevated-bg);
+  color: var(--elevated-text);
+  border: 1px solid var(--elevated-border);
+}
+
+.badge-low {
+  background: var(--normal-bg);
+  color: var(--normal-text);
+  border: 1px solid var(--normal-border);
+}
+
+.badge-provenance {
+  background: rgba(23, 37, 68, 0.85);
+  color: var(--blue-sky);
+  border: 1px solid rgba(96, 165, 250, 0.35);
+  font-family: var(--font-mono);
+  font-size: 0.80rem;
+  font-weight: 700;
+}
+
+/* Smooth Restrained Keyframe Animations */
+@keyframes softPulse {
+  0%, 100% {
+    opacity: 0.85;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.35s ease forwards;
+}
+
+/* App Viewport Layout */
+.app-viewport {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  background-color: var(--bg-deep);
+}
+
+.main-content {
+  display: grid;
+  grid-template-columns: 1fr 430px;
+  flex: 1;
+  overflow: hidden;
+  position: relative;
+}
+
+/* Responsive & Small Screen / Small Viewport Styles (sm pages) */
+@media (max-width: 1024px) {
+  .main-content {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr auto;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    font-size: 16.5px;
+  }
+
+  h1, .font-serif {
+    font-size: 2.2rem;
+    font-weight: 800;
+  }
+
+  h2 {
+    font-size: 1.6rem;
+    font-weight: 750;
+  }
+
+  h3 {
+    font-size: 1.25rem;
+    font-weight: 750;
+  }
+
+  .badge {
+    font-size: 0.85rem;
+    padding: 0.35rem 0.9rem;
+    font-weight: 800;
+  }
+
+  .btn-primary, .btn-secondary {
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 0.85rem 1.5rem;
+  }
+
+  .glass-card {
+    padding: 1.15rem;
+  }
+}

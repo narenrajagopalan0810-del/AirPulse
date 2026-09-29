@@ -1,0 +1,34 @@
+{
+  "id": "punjab",
+  "name": "Punjab (Sangrur - Patiala agricultural belt), India",
+  "bbox": [74.50, 29.80, 76.80, 31.50],
+  "center": [30.2458, 75.8421],
+  "defaultZoom": 11,
+  "primaryLanguages": ["en", "hi"],
+  "stations": [
+    {
+      "id": "punjab-sangrur",
+      "name": "Sangrur Civil Station - PPCB",
+      "lat": 30.2458,
+      "lng": 75.8421,
+      "baselineMu": 110.0,
+      "baselineSigma": 35.0
+    },
+    {
+      "id": "punjab-patiala",
+      "name": "Model Town, Patiala - PPCB",
+      "lat": 30.3400,
+      "lng": 76.3800,
+      "baselineMu": 125.0,
+      "baselineSigma": 40.0
+    },
+    {
+      "id": "punjab-ludhiana",
+      "name": "Punjab Agricultural Univ, Ludhiana - PPCB",
+      "lat": 30.9010,
+      "lng": 75.8050,
+      "baselineMu": 130.0,
+      "baselineSigma": 42.0
+    }
+  ]
+}

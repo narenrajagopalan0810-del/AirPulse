@@ -1,0 +1,42 @@
+{
+  "id": "delhi",
+  "name": "Delhi NCR, India",
+  "bbox": [76.84, 28.40, 77.35, 28.88],
+  "center": [28.6139, 77.2090],
+  "defaultZoom": 12,
+  "primaryLanguages": ["en", "hi"],
+  "stations": [
+    {
+      "id": "delhi-anand-vihar",
+      "name": "Anand Vihar, Delhi - DPCC",
+      "lat": 28.6469,
+      "lng": 77.3160,
+      "baselineMu": 180.0,
+      "baselineSigma": 45.0
+    },
+    {
+      "id": "delhi-wazirpur",
+      "name": "Wazirpur Industrial Area, Delhi - DPCC",
+      "lat": 28.6999,
+      "lng": 77.1654,
+      "baselineMu": 165.0,
+      "baselineSigma": 40.0
+    },
+    {
+      "id": "delhi-r-k-puram",
+      "name": "R K Puram, Delhi - DPCC",
+      "lat": 28.5632,
+      "lng": 77.1869,
+      "baselineMu": 140.0,
+      "baselineSigma": 35.0
+    },
+    {
+      "id": "delhi-punjabi-bagh",
+      "name": "Punjabi Bagh, Delhi - DPCC",
+      "lat": 28.6723,
+      "lng": 77.1325,
+      "baselineMu": 155.0,
+      "baselineSigma": 38.0
+    }
+  ]
+}

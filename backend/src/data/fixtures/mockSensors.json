@@ -1,0 +1,39 @@
+{
+  "stations": {
+    "delhi-wazirpur": {
+      "name": "Wazirpur Industrial Area, Delhi - DPCC",
+      "pm25": 385.0,
+      "baselineMu": 165.0,
+      "baselineSigma": 40.0,
+      "status": "active"
+    },
+    "delhi-anand-vihar": {
+      "name": "Anand Vihar, Delhi - DPCC",
+      "pm25": 410.0,
+      "baselineMu": 180.0,
+      "baselineSigma": 45.0,
+      "status": "active"
+    },
+    "delhi-r-k-puram": {
+      "name": "R K Puram, Delhi - DPCC",
+      "pm25": 145.0,
+      "baselineMu": 140.0,
+      "baselineSigma": 35.0,
+      "status": "active"
+    },
+    "punjab-sangrur": {
+      "name": "Sangrur Civil Station - PPCB",
+      "pm25": 290.0,
+      "baselineMu": 110.0,
+      "baselineSigma": 35.0,
+      "status": "active"
+    },
+    "chennai-guindy": {
+      "name": "Guindy Industrial Area - TNPCB",
+      "pm25": 84.0,
+      "baselineMu": 48.0,
+      "baselineSigma": 15.0,
+      "status": "active"
+    }
+  }
+}

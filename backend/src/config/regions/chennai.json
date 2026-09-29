@@ -1,0 +1,34 @@
+{
+  "id": "chennai",
+  "name": "Chennai (Coastal & Industrial corridors), India",
+  "bbox": [80.10, 12.90, 80.35, 13.25],
+  "center": [13.0827, 80.2707],
+  "defaultZoom": 12,
+  "primaryLanguages": ["en", "ta"],
+  "stations": [
+    {
+      "id": "chennai-guindy",
+      "name": "Guindy Industrial Area - TNPCB",
+      "lat": 13.0067,
+      "lng": 80.2023,
+      "baselineMu": 48.0,
+      "baselineSigma": 15.0
+    },
+    {
+      "id": "chennai-manali",
+      "name": "Manali Petrochemical Corridor - TNPCB",
+      "lat": 13.1667,
+      "lng": 80.2600,
+      "baselineMu": 62.0,
+      "baselineSigma": 18.0
+    },
+    {
+      "id": "chennai-velachery",
+      "name": "Velachery Residential - TNPCB",
+      "lat": 12.9815,
+      "lng": 80.2180,
+      "baselineMu": 42.0,
+      "baselineSigma": 12.0
+    }
+  ]
+}

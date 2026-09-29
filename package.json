@@ -1,0 +1,13 @@
+{
+  "name": "airpulse-ai",
+  "version": "1.0.0",
+  "description": "AirPulse AI — Autonomous Environmental Intelligence & Triage System",
+  "scripts": {
+    "dev:backend": "npm.cmd --prefix backend run dev",
+    "dev:frontend": "npm.cmd --prefix frontend run dev",
+    "test:backend": "npm.cmd --prefix backend test",
+    "build:backend": "npm.cmd --prefix backend run build",
+    "build:frontend": "npm.cmd --prefix frontend run build"
+  },
+  "devDependencies": {}
+}
